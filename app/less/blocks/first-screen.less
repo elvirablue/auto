@@ -1,0 +1,148 @@
+.first-screen {
+	height: 757px;
+	padding-top: 70px;	
+	text-align: center;
+	position: relative;
+
+
+	&__subtitle {		
+		display: block;
+		width: 353px;
+		height: 38px;
+		margin: 25px auto 0;
+		background: url(../img/bg-red.png) left center no-repeat;
+
+		.text-norm(20px);
+		line-height: 38px;
+		text-align: center;
+	}
+
+	&__col {
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 65px;
+		width: 430px;
+		height: auto;		
+	}
+
+	&__btn-down {
+		display: block;
+		width: 25px;
+		height: 110px;
+		position: absolute;
+		bottom: 60px;
+		right: 20px;
+	}
+
+	&__slider {
+		display: block;
+		width: 100%;
+		margin-top: -50px;
+		text-align: left;
+		padding-left: 55px;
+		img {
+			width: 720px;
+			height: auto;
+		}
+	}
+}
+
+.slider-number {
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	right: 115px;
+	background-color: #fff;
+
+
+
+	.line {
+		background-image: linear-gradient(to right, rgb(220,22,27) 0%, rgb(168,28,28) 100%);
+  		box-shadow: 0px 3px 7px 0px rgba(234, 28, 28, 0.35);
+  		position: absolute;
+  		z-index: 6;
+		width: 100%;
+  		height: 6px;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+	}
+
+	.number {
+		display: inline-block;
+		vertical-align: middle;
+		.text-norm(72px);
+		font-weight: bold;
+		line-height: 170px;
+		text-align: left;
+		padding-left: 52px;
+		
+	}
+
+	.number:after {
+		content: "/3";
+		color: @color-text-red;
+		.text-bold(24px);
+		line-height: 130px;
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+
+	.prev, .next {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		z-index: 6;
+		top: 50%;
+		margin-top: -20px;
+		background: url(../img/arr-gray.png) center no-repeat;
+		cursor: pointer;
+	}
+
+	.prev:hover, .next:hover {
+		background-image:  url(../img/arr-red.png);
+	}
+
+	.prev {
+		left: 20px;
+	} 
+
+	.next {
+		right: 20px;
+		transform: rotate(180deg);
+	}
+}
+
+
+
+
+.advantage {
+	width: 100%;
+	height: auto;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+
+	img {
+		display: inline-block;
+		vertical-align: top;
+		width: 82px;
+		height: auto;
+	}
+
+	p {
+		display: inline-block;
+		vertical-align: top;
+		width: 335px;
+		padding-left: 25px;
+		.text-light(16px);
+		line-height: 24px;
+		color: @color-text-g;
+	}
+}
