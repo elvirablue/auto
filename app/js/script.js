@@ -1,6 +1,7 @@
 $(document).on('ready', function(){ 
 	
-  
+  //$("input[name^='user-phone']").mask("+7 (999) 999-9999");
+
    $('.js-list-rollup').click(function(event){
         event.preventDefault();
         var target = $(this);
@@ -8,12 +9,32 @@ $(document).on('ready', function(){
         if (target.hasClass('active')) {
           $('.disclaimer__list-item-hidden').show();
           $('.disclaimer__list-item-rollup').text('Свернуть');
+          $('.disclaimer__list-item').addClass('active');
         } else {
           $('.disclaimer__list-item-hidden').hide();
           $('.disclaimer__list-item-rollup').text('Развернуть');
+          $('.disclaimer__list-item').removeClass('active');
         }
         
     }); 
+
+   $('.js-list-item').click(function(event) {
+        event.preventDefault();
+        var target = $(this);
+        target.toggleClass('active');
+        if (target.hasClass('active')) {
+          $(this).next().show();
+          $('.js-list-rollup').addClass('active');
+          $('.disclaimer__list-item-rollup').text('Свернуть');          
+        } else {
+          $(this).next().hide();  
+          if (!$('.js-list-item').hasClass('active')) {
+            $('.js-list-rollup').removeClass('active');
+            $('.disclaimer__list-item-rollup').text('Развернуть');
+            $('.disclaimer__list-item-hidden').hide();
+          }      
+        }
+   })
 
    $('.js-list-modal').click(function(event){
         event.preventDefault();

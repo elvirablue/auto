@@ -14,7 +14,8 @@ $(document).on('ready', function(){
           event.preventDefault(); 
           popup = document.querySelector('.js-modal-description');
           close = popup.querySelector('.modal_close');          
-          popup.style.top = event.pageY - 50 + 'px';        
+          //popup.style.top = event.pageY - 50 + 'px'; 
+          popup.style.height = '835px';
           PopupShow(event);
 
           var owlSlider = $("#owl-slider");
@@ -112,6 +113,7 @@ $(document).on('ready', function(){
 
           popup = document.querySelector('.js-modal');
           close = popup.querySelector('.modal_close');
+          popup.style.height = 'auto';
           popup.style.top = '50%'; 
           popup.style.marginTop = '-150px'; 
              

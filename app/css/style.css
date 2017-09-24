@@ -243,14 +243,15 @@ a {
 .modal {
   display: none;
   width: 1030px;
-  height: auto;
+  height: 835px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   left: 50%;
-  /*top: 20px;*/
+  top: 50%;
+  margin-top: -417px;
   bottom: auto;
   right: auto;
   margin-left: -515px;
@@ -1270,6 +1271,7 @@ table.table--modal2 tr td {
   height: 60px;
   padding: 20px 100px;
   border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
 }
 .disclaimer__list-item:first-child {
   cursor: pointer;
