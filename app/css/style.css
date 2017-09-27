@@ -107,6 +107,7 @@ a {
 .sticky-wrapper {
   position: relative;
   z-index: 10000;
+  background-color: #fff;
 }
 .container {
   width: 1200px !important;
@@ -554,37 +555,76 @@ a {
 }
 .main-header__logo,
 .main-footer__logo {
-  width: 114px;
+  width: 200px;
   height: 36px;
+  margin-top: -3px;
   float: left;
-  background: url(../img/logo.svg) left center no-repeat;
+  /*background: url(../img/logo.svg) left center no-repeat;*/
+  font-family: 'AudiType Ext Bold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+.main-header__logo span,
+.main-footer__logo span {
+  color: #cb181b;
 }
 .main-header__text,
 .main-footer__text {
   width: 350px;
   height: 36px;
   padding-left: 30px;
-  border-left: 1px solid #e8e7e5;
+  /*border-left: 1px solid #e8e7e5;*/
   float: left;
-  color: #8a8a8a;
-  font-family: 'museo_sans_cyrl100', sans-serif;
-  font-size: 14px;
+  color: #000;
+  font-family: 'AudiType Ext', sans-serif;
+  font-size: 12px;
+}
+.main-header .link,
+.main-footer .link {
+  font-family: 'AudiType Ext Bold', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+}
+.main-header .span,
+.main-footer .span {
+  display: inline-block;
+  font-family: 'AudiType Ext', sans-serif;
+  font-size: 19px;
+  line-height: 16px;
+  font-weight: 600;
+  vertical-align: top;
+  color: #cb181b;
+}
+.main-header .link:hover,
+.main-footer .link:hover {
+  color: #cb181b;
 }
 .main-header__phone,
 .main-footer__phone {
-  width: 200px;
+  width: 250px;
   height: auto;
   float: right;
-  text-align: right;
+  text-align: left;
+  font-family: 'AudiType Ext', sans-serif;
+  font-size: 14px;
 }
 .main-header__audi,
 .main-footer__audi {
-  width: 345px;
-  height: 36px;
+  width: 150px;
+  height: 25px;
   line-height: 36px;
   float: right;
   padding-left: 45px;
   text-align: right;
+}
+.main-header__audi img,
+.main-footer__audi img {
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
 }
 .main-header__hr,
 .main-footer__hr {
@@ -596,16 +636,16 @@ a {
   border: none;
 }
 .time {
-  font-family: 'museo_sans_cyrl100', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: #999999;
+  font-family: 'AudiType Ext', sans-serif;
+  font-size: 12px;
+  color: #000;
 }
 .phone {
-  font-family: 'museo_sans_cyrl500', sans-serif;
-  font-size: 19px;
+  font-family: 'AudiType Ext', sans-serif;
+  font-size: 16px;
   font-weight: bold;
   color: #000;
+  text-align: left;
 }
 .first-screen {
   height: 757px;

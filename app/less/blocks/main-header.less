@@ -17,36 +17,64 @@
 	.clerfix();
 	padding-top: 27px;
 	&__logo {
-		width: 114px;
+		width: 200px;
 		height: 36px;
+		margin-top: -3px;
 		float: left;
-		background: url(../img/logo.svg) left center no-repeat;
+		/*background: url(../img/logo.svg) left center no-repeat;*/
+		.text-audi-bold(14px);
+		font-weight: bold;
+		color: @color-text-b;
+		span {color: @color-text-red;}
 	}
 
 	&__text {
 		width: 350px;
 		height: 36px;
 		padding-left: 30px;
-		border-left: 1px solid #e8e7e5;
+		/*border-left: 1px solid #e8e7e5;*/
 		float: left;
-		color: #8a8a8a;
-		.text-light(14px);
+		color:  @color-text-b;
+		.text-audi(12px);
+	}
+
+	.link {		
+		.text-audi-bold(12px);
+		line-height: 16px;
+		color:  @color-text-b;		
+		text-decoration: none;
+		
+	}
+
+	.span {
+			display: inline-block;
+			.text-audi(19px);
+			line-height: 16px;
+			font-weight: 600;			
+			vertical-align: top;
+			color: @color-text-red;
+		}
+
+	.link:hover {
+		color: @color-text-red;
 	}
 
 	&__phone {
-		width: 200px;
+		width: 250px;
 		height: auto;
 		float: right;		
-		text-align: right;
+		text-align: left;
+		.text-audi(14px);
 	}
 
 	&__audi {
-		width: 345px;
-		height: 36px;
+		width: 150px;
+		height: 25px;
 		line-height: 36px;
 		float: right;	
 		padding-left: 45px;
 		text-align: right;
+		img {vertical-align: middle; height: 100%; width: auto;}
 	}
 
 	&__hr {
@@ -60,13 +88,14 @@
 }
 
 .time {
-	.text-light(14px);
-	font-weight: bold;
-	color: #999999;
+	.text-audi(12px);
+	
+	color:  @color-text-b;
 }
 
 .phone {
-	.text-norm(19px);
+	.text-audi(16px);
 	font-weight: bold;
 	color: @color-text-b;
+	text-align: left;
 }
