@@ -1,0 +1,56 @@
+.selection-bg {
+	background: url(../img/bg-select.jpg) center no-repeat;
+  background-size: auto;
+	height: 800px;
+}
+
+.selection {
+	h2 {
+		padding-top: 40px;
+	}
+
+	&__form {
+		display: block;
+		width: 870px;
+		height: auto;
+		min-height: 600px;
+		margin-top: 55px;
+		margin-left: 70px;
+		padding: 0 95px;
+		border-radius: 5px;
+  		background-color: #fff;
+  		box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);
+
+  		.title {
+  			.text-norm(24px);
+  		}
+
+  		.subtitle {
+  			.text-norm(16px);
+  			padding-left: 45px;
+  			line-height: 18px;
+  			background: url(../img/ico-3.png) left center no-repeat;
+  		}
+
+  		.comment {
+  			.text-norm(16px);
+  			font-weight: bold;
+  			color: @color-text-gray;
+  			padding-top: 20px;
+
+  			span {color: @color-text-b;}
+  		}
+
+  		.link {
+  			font-size: 16px;
+  			padding-top: 77px;
+  		}
+	}
+
+	&__step {
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 30px;
+	}
+
+}

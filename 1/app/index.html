@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>  
+	<meta charset="UTF-8">
+	<title>Ауди. Центр Саратов</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-3.3.2.min.css">	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-multiselect.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.css">  
+  	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  	<link rel="stylesheet" href="css/venders/jquery-ui.css">
+
+	<link rel="stylesheet" href="css/venders/normalize.css">
+	<link rel="stylesheet" href="css/venders/animate.css">
+	<link rel="stylesheet" href="css/stylename.css">	
+	<link rel="stylesheet" href="css/style.css">	
+	<!-- <link rel="stylesheet" href="css/simple.css">	-->
+	
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/venders/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>	
+	<script type="text/javascript" src="bootstrap/js/bootstrap-multiselect.js"></script>
+	<script type="text/javascript" src="js/venders/jquery.maskedinput.js"></script>
+	<script type="text/javascript" src="js/venders/jquery.sticky.js"></script>
+	<script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>	
+	<script type="text/javascript" src="js/venders/jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="css/venders/jquery.arcticmodal-0.3.css">	
+	<script type="text/javascript" src="js/venders/jquery.arcticmodal-0.3.min.js"></script>
+	<!--[if lte IE 9]>
+	    <script src="oldies/oldies.js" charset="utf-8"></script>
+	    <style>
+	       .wrapper-x {display: none;}	       
+	    </style>
+	 <![endif]-->
+</head> 
+<body>
+
+
+<!-- **********************************************************************- -->
+
+<div class="wrapper-x">
+	<div class="wrapper-y">
+
+ 
+	<!-- *********************** HEADER + FIRST SCREEN ********************************- -->
+	<div class="main-header-bg">
+		<div class="sticky-wrapper" id="header-sticky-wrapper">
+			<div class="main-header container">
+				<a href="" class="main-header__logo"></a>
+				<p class="main-header__text">				
+					Усть-Курдюмское шоссе, 4 км, строение 2
+					<a href="#" class="link js-btn-modal">Обратный звонок</a>
+				</p>
+				<p class="main-header__audi"><img src="img/audi-logo.png" alt=""></p>	
+				<div class="main-header__phone">				
+					<a href="tel:+88002000500" class="phone">+7 (8452) 74-44-47</a>
+					<p  class="time">Ежедневно с 9:00 до 20:00</p>
+				</div>
+				
+			</div>
+			<hr class="main-header__hr">
+		</div>	
+
+		<div class="first-screen container">			
+			<h1>Предлагаем качественные автомобили <br>с пробегом от официального дилера</h1>
+			<p class="first-screen__subtitle white">проверенные по 110 пунктам</p>
+			<div class="first-screen__col center">
+				<div class="advantage">
+					<img src="img/a1.png" alt="">
+					<p>Каждая деталь и функция автомобиля подвергается тщательной проверке и при необходимости ремонтируется.</p>
+				</div>
+
+				<div class="advantage">
+					<img src="img/a2.png" alt="">
+					<p>Обмен Вашего автомобиля<br>с пробегом на выгодных<br>для Вас условиях.</p>
+				</div>
+			</div>
+			<div class="first-screen__col center">
+				<div class="advantage">
+					<img src="img/a3.png" alt="">
+					<p style="padding-top: 14px;">Комплексная гарантия <br>минимум на 12 месяцев.</p>
+				</div>
+
+				<div class="advantage">
+					<img src="img/a4.png" alt="">
+					<p style="padding-top: 14px;">Юридическая проверка<br>и проверка по базам ГИБДД, БКИ</p>
+				</div>
+
+				<div class="advantage">
+					<img src="img/a5.png" alt="">
+					<p style="padding-top: 20px;">Гибкие условия по кредиту</p>
+				</div>
+			</div>
+			<div class="first-screen__slider">
+				<img src="img/slider1.png" alt="">
+				<div class="slider-number">
+					<i class="prev js-fs-prev"></i>
+					<p class="number">1</p>
+					<i class="next js-fs-next"></i>
+					<i class="line"></i>					
+				</div>				
+			</div>
+			<a href="#" class="first-screen__btn-down"><img src="../img/down.svg" alt=""></a>
+		</div>
+		
+	</div>
+
+	<!-- **********************************************************************- -->
+	<div class="separator"></div>
+
+	<div class="selection-bg">
+		<div class="selection container">
+			<h2>Получите качественный подбор<br>в 3 шага </h2>
+			<form action="" method="post" class="selection__form">
+				<div class="selection__step" style="width: 100%;">
+					<p class="title">1. Выберите марку и модель автомобиля:</p>
+					<div class="user-input mark">	
+					<!-- Build your select: -->
+						<select id="user-mark">
+					   	 	<option value="cheese">Марка</option>
+					    	<option value="tomatoes">Tomatoes</option>
+					    	<option value="mozarella">Mozzarella</option>
+					    	<option value="mushrooms">Mushrooms</option>
+					    	<option value="pepperoni">Pepperoni</option>
+					    	<option value="onions">Onions</option>
+						</select>
+					</div>
+					<!-- Initialize the plugin: -->
+					<script type="text/javascript">
+					    $(document).ready(function() {$('#user-mark').multiselect();});
+					</script>
+
+					<div class="user-input model" >	
+					<!-- Build your select: -->
+						<select id="user-model">
+					   	 	<option value="cheese">Модель</option>
+					    	<option value="tomatoes">Tomatoes</option>
+					    	<option value="mozarella">Mozzarella</option>
+					    	<option value="mushrooms">Mushrooms</option>
+					    	<option value="pepperoni">Pepperoni</option>
+					    	<option value="onions">Onions</option>
+						</select>
+					</div>
+					<!-- Initialize the plugin: -->
+					<script type="text/javascript">
+					    $(document).ready(function() {$('#user-model').multiselect();});
+					</script>
+
+					<div class="user-input kpp small">	
+					<!-- Build your select: -->
+						<select id="user-kpp">
+					   	 	<option value="cheese">Коробка</option>
+					    	<option value="tomatoes">Механика</option>
+					    	<option value="mozarella">Автомат</option>
+					    	
+						</select>
+					</div>
+					<!-- Initialize the plugin: -->
+					<script type="text/javascript">
+					    $(document).ready(function() {$('#user-kpp').multiselect();});
+					</script>
+
+					<div class="user-input motor small">	
+					<!-- Build your select: -->
+						<select id="user-motor">
+					   	 	<option value="cheese">Двигатель</option>
+					    	<option value="tomatoes">1,5 литра</option>
+					    	<option value="mozarella">3 литра</option>
+					    	
+						</select>
+					</div>
+					<!-- Initialize the plugin: -->
+					<script type="text/javascript">
+					    $(document).ready(function() {$('#user-motor').multiselect();});
+					</script>
+				</div>
+
+				<div class="selection__step" style="width: 400px;">
+					<p class="title">2. Год выпуска:</p>
+					<div class="user-input god-1">	
+					<!-- Build your select: -->
+						<select id="user-god-1">
+					   	 	<option value="cheese">От</option>
+					    	<option value="tomatoes">2000</option>
+					    	<option value="mozarella">2001</option>
+					    	<option value="mushrooms">2002</option>
+					    	<option value="pepperoni">2003</option>
+					    	<option value="onions">2004</option>
+					    	<option value="tomatoes">2000</option>
+					    	<option value="mozarella">2001</option>
+					    	<option value="mushrooms">2002</option>
+					    	<option value="pepperoni">2003</option>
+					    	<option value="onions">2004</option>
+						</select>
+					</div>
+					<!-- Initialize the plugin: -->
+					<script type="text/javascript">
+					    $(document).ready(function() {$('#user-god-1').multiselect({maxHeight: 200});});
+					</script>
+
+					<div class="user-input god-2" >	
+					<!-- Build your select: -->
+						<select id="user-god-2">
+					   	 	<option value="cheese">До</option>
+					    	<option value="tomatoes">2000</option>
+					    	<option value="mozarella">2001</option>
+					    	<option value="mushrooms">2002</option>
+					    	<option value="pepperoni">2003</option>
+					    	<option value="onions">2004</option>
+						</select>
+					</div>
+					<!-- Initialize the plugin: -->
+					<script type="text/javascript">
+					    $(document).ready(function() {$('#user-god-2').multiselect({maxHeight: 200});});
+					</script>
+				</div>
+
+				<div class="selection__step" style="width: 270px;">
+					<p class="title">3. Ваш бюджет:</p>
+					<div class="selector">						
+						<div class="selector__ui-filter" id="selector1">
+							<div class="ui-slider ui-slider-horizontal ui-filter">				
+								<span class="ui-slider-handler handler"></span>
+							</div>
+						</div>	
+						<p>до <b id="amount1">1000</b> USD</p>				
+					</div>
+					<script>
+						$( "#selector1" ).slider({
+							range: "min",
+							value: 1000,
+							max: 10000,
+							slide: function( event, ui ) {
+					        	$( "#amount1").text( ui.value );
+					      	}
+						});
+					</script>
+				</div>
+
+				<div class="selection__step" style="width: 400px;">
+					<p class="subtitle">Добавить комментарий по машине</p>					
+					<textarea class="user-input area"  name="user-comment" id="user-comment" cols="7" rows="10" maxlength="1500" placeholder="Ваш комментарий"></textarea>
+					<p class="comment">Акция: для клиентов <span>тест-драйв — бесплатно!</span>	</p>					
+				</div>
+
+				<div class="selection__step" style="width: 270px;">
+					<button class="button search" type="submit">Подобрать авто</button>
+					<a href="#" class="link js-btn-modal">Записаться на тест драйв</a>
+				</div>
+			</form>
+		</div>
+		
+	</div>
+
+
+	<!-- **********************************************************************- -->
+	<div class="separator"></div>
+
+	<div class="instock container">
+		<h2>Автомобили в наличии</h2>
+		<div class="instock__block">
+			<p class="instock__img"><img src="img/auto1.png" alt=""></p>
+			<div class="instock__info">
+				<h3>Audi A3 Sedan</h3>
+				<table class="table table--instock">
+					<tr>
+						<td>Год выпуска</td>
+						<td>2016</td>
+					</tr>
+					<tr>
+						<td>Кузов</td>
+						<td>4 дв</td>
+					</tr>
+					<tr>
+						<td>Двигатель</td>
+						<td>1.4 л. / 125 л.с. / Бензин турбонаддув</td>
+					</tr>
+					<tr>
+						<td>КПП</td>
+						<td>АКПП</td>
+					</tr>
+					<tr>
+						<td>Привод</td>
+						<td>Передний привод</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="instock__price">
+				<a href="#" class="link js-btn-modal-description">подробнее</a>
+				<p class="price">Цена: <b>968 000 руб.</b></p>
+				<button class="button arrow-right js-btn-modal">Цена по акции</button>
+			</div>			
+		</div>
+
+		<div class="instock__block">
+			<p class="instock__img"><img src="img/auto2.png" alt=""></p>
+			<div class="instock__info">
+				<h3>Audi A3 Sedan</h3>
+				<table class="table table--instock">
+					<tr>
+						<td>Год выпуска</td>
+						<td>2016</td>
+					</tr>
+					<tr>
+						<td>Кузов</td>
+						<td>4 дв</td>
+					</tr>
+					<tr>
+						<td>Двигатель</td>
+						<td>1.4 л. / 125 л.с. / Бензин турбонаддув</td>
+					</tr>
+					<tr>
+						<td>КПП</td>
+						<td>АКПП</td>
+					</tr>
+					<tr>
+						<td>Привод</td>
+						<td>Передний привод</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="instock__price">
+				<a href="#" class="link js-btn-modal-description">подробнее</a>
+				<p class="price">Цена: <b>968 000 руб.</b></p>
+				<button class="button arrow-right js-btn-modal">Цена по акции</button>
+			</div>			
+		</div>
+
+		<div class="instock__block">
+			<p class="instock__img"><img src="img/auto3.png" alt=""></p>
+			<div class="instock__info">
+				<h3>Audi A3 Sedan</h3>
+				<table class="table table--instock">
+					<tr>
+						<td>Год выпуска</td>
+						<td>2016</td>
+					</tr>
+					<tr>
+						<td>Кузов</td>
+						<td>4 дв</td>
+					</tr>
+					<tr>
+						<td>Двигатель</td>
+						<td>1.4 л. / 125 л.с. / Бензин турбонаддув</td>
+					</tr>
+					<tr>
+						<td>КПП</td>
+						<td>АКПП</td>
+					</tr>
+					<tr>
+						<td>Привод</td>
+						<td>Передний привод</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="instock__price">
+				<a href="#" class="link js-btn-modal-description">подробнее</a>
+				<p class="price">Цена: <b>968 000 руб.</b></p>
+				<button class="button arrow-right js-btn-modal">Цена по акции</button>
+			</div>			
+		</div>
+
+		<div class="instock__block">
+			<p class="instock__img"><img src="img/auto4.png" alt=""></p>
+			<div class="instock__info">
+				<h3>Audi A3 Sedan</h3>
+				<table class="table table--instock">
+					<tr>
+						<td>Год выпуска</td>
+						<td>2016</td>
+					</tr>
+					<tr>
+						<td>Кузов</td>
+						<td>4 дв</td>
+					</tr>
+					<tr>
+						<td>Двигатель</td>
+						<td>1.4 л. / 125 л.с. / Бензин турбонаддув</td>
+					</tr>
+					<tr>
+						<td>КПП</td>
+						<td>АКПП</td>
+					</tr>
+					<tr>
+						<td>Привод</td>
+						<td>Передний привод</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="instock__price">
+				<a href="#" class="link js-btn-modal-description">подробнее</a>
+				<p class="price">Цена: <b>968 000 руб.</b></p>
+				<button class="button arrow-right js-btn-modal">Цена по акции</button>
+			</div>			
+		</div>
+	</div>
+
+	<!-- **********************************************************************- -->
+	<div class="separator"></div>
+
+	<div class="form-1-bg">
+		<div class="form-1 container">
+			<h2>Оставьте контакты, чтобы получить<br>автоподбор по вашим критериям</h2>
+			<form action="" method="post" class="form">
+				<div class="input-wrapper">
+					<label>Введите ваше имя:</label>
+					<input type="text" class="user-input input-form-1 required" name="user-name" placeholder="Иван">					
+				</div>
+				<div class="input-wrapper">
+					<label>Введите ваш телефон:</label>
+					<input type="text" class="user-input input-form-1 required" name="user-phone" placeholder="+375 (33) 123-45-67">					
+				</div>
+				<div class="input-wrapper">
+					<button class="button button-white arrow-red-right">Получить подбор</button>					
+				</div>
+				<div class="ch_wrapper">
+				<!-- можно поменять на type="radio" -->
+					<input id="check1" type="checkbox" name="check" value="1"  checked>
+					<label for="check1">Я согласен <a href="#">с условиями</a> обработки персональных данных</label>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+
+
+	<!-- **********************************************************************- -->	
+
+	<div class="disclaimer-bg">
+		<div class="separator"></div>
+		<div class="disclaimer container">
+			<h2>Дисклеймер</h2>
+		
+			<div class="disclaimer__drop-down-list">
+				<!-- ***************** -->		
+				<div class="disclaimer__list-item block-shadow js-list-rollup">
+					<p class="disclaimer__list-item-rollup">Развернуть</p>
+				</div>	
+
+				<!-- ***************** -->
+				<div class="disclaimer__list-item block-shadow js-list-item">
+					<p class="disclaimer__list-item-title">Дисклеймер ежемесячных платежей</p>
+				</div>
+				<div class="disclaimer__list-item-hidden">
+					<p class="disclaimer__list-item-text">
+						<b>Дисклеймер ежемесячных платежей для Audi A4</b><br>
+						Ежемесячный платеж в сумме 20 000 рублей означает величину затрат заемщика, взявшего кредит по программе кредитования ООО «Фольксваген Банк РУС» (далее — «Банк») «Audi Credit Comfort» на покупку нового автомобиля Audi A4 Design line 2.0 TFSI 190 л.с . S tronic, передний привод с расчетной розничной ценой 2 065 000 рублей, при получении кредита сроком на 36 месяцев, первоначальном взносе 747 300 рублей (36,19% от стоимости автомобиля) и процентной ставке 7,0% годовых при предоставлении полного пакета документов, остаточный платеж 826 000 рублей (40.0% от стоимости автомобиля).
+					</p>
+				</div>
+
+				<!-- ***************** -->
+				<div class="disclaimer__list-item block-shadow js-list-item">
+					<p class="disclaimer__list-item-title">Дисклеймер ежемесячных платежей</p>
+				</div>
+				<div class="disclaimer__list-item-hidden">
+					<p class="disclaimer__list-item-text">
+						<b>Дисклеймер ежемесячных платежей для Audi A4</b><br>
+						Ежемесячный платеж в сумме 20 000 рублей означает величину затрат заемщика, взявшего кредит по программе кредитования ООО «Фольксваген Банк РУС» (далее — «Банк») «Audi Credit Comfort» на покупку нового автомобиля Audi A4 Design line 2.0 TFSI 190 л.с . S tronic, передний привод с расчетной розничной ценой 2 065 000 рублей, при получении кредита сроком на 36 месяцев, первоначальном взносе 747 300 рублей (36,19% от стоимости автомобиля) и процентной ставке 7,0% годовых при предоставлении полного пакета документов, остаточный платеж 826 000 рублей (40.0% от стоимости автомобиля).
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- **********************************************************************- -->
+	<div class="risks-bg">
+		<div class="separator"></div>
+		<div class="risks container">
+			<h2>С чем Вы рискуете столкнуться<br>при самостоятельном подборе автомобиля</h2>
+
+			<div class="risks__block-shadow">
+				<p class="risk01">Скрытые дефекты основных<br>узлов и агрегатов</p>
+				<p class="risk03">Недостоверная информация<br>о состоянии кузова. (После ДТП)</p>
+				<p class="risk02">Скрученный<br>пробег </p>
+				<p class="risk04">Юридическая чистота<br>автомобиля</p>
+				<div class="risks__img-auto"><img src="img/auto-risks.png" alt=""></div>
+			</div>
+
+			<h2>Доверьте все риски нам</h2>
+			<p class="risks__subtitle">Оставьте заявку на подбор автомобиля. <br>Специалист перезвонит в течение 15 минут и проконсультирует Вас:</p>
+
+			<form action="" method="post" class="form">
+				<div class="input-wrapper">
+					<label>Введите ваше имя:</label>
+					<input type="text" class="user-input in-shadow input-form-1 required" name="user-name" placeholder="Иван">					
+				</div>
+				<div class="input-wrapper">
+					<label>Введите ваш телефон:</label>
+					<input type="text" class="user-input in-shadow input-form-1 required" name="user-phone" placeholder="+375 (33) 123-45-67">					
+				</div>
+				<div class="input-wrapper">
+					<button class="button arrow-right">Получить подбор</button>					
+				</div>
+				<div class="ch_wrapper">
+				<!-- можно поменять на type="radio" -->
+					<input id="check2" type="checkbox" name="check" value="1" checked>
+					<label for="check2">Я согласен <a href="#"><b>с условиями</b></a> обработки персональных данных</label>
+				</div>
+				
+			</form>
+
+		</div>
+	</div>
+
+	<!-- **********************************************************************- -->
+	<div class="separator"></div>
+	<div class="special container">
+		<div class="special__block-shadow">
+			<h2 class="special__block-left">Получите<br>специальное<br>предложение:</h2>
+			<form action="" method="post" class="form special__block-right">
+				<div class="input-wrapper">
+					<label>Введите ваше имя:</label>
+					<input type="text" class="user-input in-shadow input-form-1 required" name="user-name" placeholder="Иван">					
+				</div>
+				<div class="input-wrapper">
+					<label>Введите ваш телефон:</label>
+					<input type="text" class="user-input in-shadow input-form-1 required" name="user-phone" placeholder="+375 (33) 123-45-67">					
+				</div>
+				<div class="input-wrapper">
+					<button class="button search">Подобрать авто</button>					
+				</div>
+				<div class="ch_wrapper">
+				<!-- можно поменять на type="radio" -->
+					<input id="check3" type="checkbox" name="check" value="1" checked>
+					<label for="check3">Я согласен <a href="#"><b>с условиями</b></a> обработки персональных данных</label>
+				</div>				
+			</form>
+			<div class="special__img-auto"><img src="img/auto-special.png" alt=""></div>
+		</div>
+	</div>
+
+	
+	<!-- *************************** БЛОК ПОДВАЛ***************************************- -->	
+	</div> <!-- end wrapper-y -->	
+	
+	<footer class="main-footer-bg">
+		<div class="main-footer container">
+			<a href="#" class="main-footer__logo"></a>
+			<p class="main-footer__text">				
+					Усть-Курдюмское шоссе, 4 км, строение 2
+					<a href="#" class="link js-btn-modal">Обратный звонок</a>
+				</p>
+				<p class="main-footer__audi"><img src="img/audi-logo.png" alt=""></p>	
+				<div class="main-footer__phone">				
+					<a href="tel:+88002000500" class="phone">+7 (8452) 74-44-47</a>
+					<p  class="time">Ежедневно с 9:00 до 20:00</p>
+				</div>				
+		</div>
+	</footer>
+
+	
+	
+	
+
+<!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
+	<div class="modal_wrapper">  </div>
+	<div class="modal js-modal-description">	  
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <div class="modal__head">	    	
+	    	<h3>Audi A3 Sedan</h3>
+	    	<p class="price">Цена: <b>968 000 руб.</b></p>
+	    	<hr>
+	    </div>    
+
+	    <div class="modal__left" style="width: 550px;">
+	    	<div id="owl-slider" class="owl-carousel">
+	    		<div class="img-wrapper"><img src="img/auto1.png" alt=""></div>
+	    		<div class="img-wrapper"><img src="img/auto2.png" alt=""></div>
+	    		<div class="img-wrapper"><img src="img/auto3.png" alt=""></div>
+	    		<div class="img-wrapper"><img src="img/auto2.png" alt=""></div>
+	    	</div>	    	
+	   
+
+	    	<div id="owl-carousel" class="owl-carousel" style="margin-top: 20px;">
+	    		<div class="img-wrapper"><img src="img/auto1.png" alt=""></div>
+	    		<div class="img-wrapper"><img src="img/auto2.png" alt=""></div>
+	    		<div class="img-wrapper"><img src="img/auto3.png" alt=""></div>
+	    		<div class="img-wrapper"><img src="img/auto2.png" alt=""></div>
+	    	</div>	    	
+	    </div>
+
+	    <div class="modal__right" style="width: 480px;">
+	    	<table class="table table--modal1">
+				<tr>
+					<td>Год выпуска</td>
+					<td><b>2016</b></td>
+				</tr>
+				<tr>
+					<td>Пробег</td>
+					<td><b>80 000 км</b></td>
+				</tr>
+				<tr>
+					<td>Кузов</td>
+					<td>4 дв</td>
+				</tr>
+				<tr>
+					<td>Двигатель</td>
+					<td>1.4 л. / 125 л.с. / Бензин турбонаддув</td>
+				</tr>
+				<tr>
+					<td>Коробка</td>
+					<td>АКПП</td>
+				</tr>
+				<tr>
+					<td>Привод</td>
+					<td>Передний привод</td>
+				</tr>
+				<tr>
+					<td>Цвет</td>
+					<td><i class="auto-color white"></i>Белый</td>
+				</tr>				
+				<tr>
+					<td>Руль</td>
+					<td>Левый</td>
+				</tr>
+				<tr>
+					<td>Состояние</td>
+					<td>Не битый</td>
+				</tr>
+				<tr>
+					<td>Владельцы</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>ПТС</td>
+					<td>Оригинал</td>
+				</tr>
+				<tr>
+					<td>VIN</td>
+					<td>WAUZZZ8P*CA****63</td>
+				</tr>
+			</table>
+	    </div>
+
+	    <div class="modal__left" style="width: 550px;">
+	    	<h4 class="">Желаете преобрести<br>автомобиль? Остались вопросы? </h4>
+	    	<p class="text">Свяжитесь с нами любым удобным способом!</p>
+	    	<a href="#" class="link gray js-btn-modal-2">Заказать звонок</a>
+	    </div>
+	    
+
+	    <div class="modal__right" style="width: 480px;">
+	    	<button class="button arrow-right js-btn-modal-2">Хочу купить</button>
+	    	<a href="#" class="link js-btn-modal-2">Записаться на тест драйв</a>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="modal js-modal" style="position: fixed;">	  
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <p class="modal__title">Хочу купить</p>
+	    <form action="" method="post" class="form modal__form">
+				<div class="input-wrapper">
+					<label>Введите ваше имя:</label>
+					<input type="text" class="user-input in-shadow input-form-1 required" name="user-name" placeholder="Иван">					
+				</div>
+				<div class="input-wrapper">
+					<label>Введите ваш телефон:</label>
+					<input type="text" class="user-input in-shadow input-form-1 required" name="user-phone" placeholder="+375 (33) 123-45-67">					
+				</div>
+				<div class="input-wrapper">
+					<button class="button">Отправить</button>					
+				</div>
+				<div class="ch_wrapper">
+				<!-- можно поменять на type="radio" -->
+					<input id="check3" type="checkbox" name="check" value="1" checked>
+					<label for="check3">Я согласен <a href="#"><b>с условиями</b></a> обработки персональных данных</label>
+				</div>
+				<input type="text" class="hidden" value="Хочу купить">				
+			</form>
+	</div>
+
+
+	<div style="display: none;">
+	    <div class="box-modal" id="exampleModal">
+	      <div class="">        
+	        <div class="box-modal_close arcticmodal-close">x</div>
+	        <h3>Спасибо за заявку!</h3>
+	        <hr>
+	        <p>Мы свяжемся с Вами в ближайшее время.</p>
+	      </div>
+	    </div>
+	</div>
+
+<!-- ********************************- -->
+</div> <!-- end wrapper-x -->
+
+
+<script src="js/script.js"> </script>
+
+<script src="js/venders/wow.min.js"></script>
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>
+
+
+<!--<script src="js/wow.js"></script>-->
+
+
+
+</body>
+</html>

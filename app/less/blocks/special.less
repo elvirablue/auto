@@ -2,6 +2,9 @@
 	width: 100%;
 	padding: 0 100px 90px;
 
+	@media @tablet-widths {padding: 0 45px 90px;}
+	@media @mobil-widths {padding: 0 0 90px;}
+
 	&__block-shadow {
 		position: relative;
 		width: 100%;
@@ -11,6 +14,9 @@
   		background-color: #fff;
   		box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.06);
   		text-align: center;
+
+  		@media @tablet-widths {padding: 65px 50px;	}	
+		@media @mobil-widths {width: 100%; padding: 0 15px 40px; }	
 	}
 
 	&__img-auto {
@@ -18,6 +24,11 @@
 		z-index: 5;
 		bottom: -30px;
 		left: -70px;
+		@media @tablet-widths {
+			img {max-width: 90%;}
+		}
+
+		@media @mobil-widths {display: none;}
 	}
 
 	&__block-left {
@@ -26,6 +37,10 @@
 		width: 380px;
 		padding-top: 20px;
 		text-align: left;
+		padding-right: 80px;
+
+		@media @tablet-widths {width: 48%; padding-right: 30px;}
+		@media @mobil-widths {width: 80%;text-align: center; padding-top: 0; padding-right: 0;}
 	}
 
 	&__block-right {
@@ -35,6 +50,18 @@
 		padding-left: 80px;
 		text-align: left;
 		border-left: 1px solid #e1e1e1;
+		@media @tablet-widths {
+			width: 48%;
+			padding-left: 8%;
+		}
+
+		@media @mobil-widths {
+			width: 100%;
+			padding: 0;
+			padding-top: 30px;
+			border-left: none;
+			text-align: center;
+		}
 
 		.input-wrapper {
 			padding-top: 0;

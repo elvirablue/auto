@@ -61,10 +61,12 @@
   z-index: 1;
 }
 
+
+
 #owl-slider.owl-carousel {
   width: 385px;
   height: 270px;
-  background-color: #eeeeee;
+  background-color: #eeeeee; 
 }
 .owl-carousel .owl-stage {
   position: relative;
@@ -311,4 +313,29 @@
 }
 #owl-carousel .active .item{
   opacity: 0.8;
+}
+
+
+
+@media (max-width: 1230px) {
+    .owl-carousel {
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #owl-carousel.owl-carousel {
+    display: none;
+  }
+
+  #owl-slider.owl-carousel {
+      width: 250px;
+      height: 160px;
+  }
+
+  #owl-slider.owl-carousel .owl-item .img-wrapper {
+    width: 250px;
+      height: 160px;
+  }
 }

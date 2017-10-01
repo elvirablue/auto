@@ -18,6 +18,17 @@
   	color: #fff;
   	line-height: 60px;
   	transition: background-image ease 0.3s, box-shadow  ease 0.3s, background-color  ease 0.3s;
+
+  	@media @tablet-widths {
+		width: 170px;
+		height: 45px;
+		line-height: 45px;
+
+		box-shadow: 0px 3px 7px 0px rgba(234, 28, 28, 0.35),
+  				0 0 0 6px #fff,
+  				0 0 0 7px #b6b6b6;
+	}	
+	@media @mobil-widths {}	
 }
 
 .button-white {
@@ -26,6 +37,10 @@
 	background-color: #fff;
 	box-shadow: 0 0 0 10px #ad292b,
   				0 0 0 11px rgba(255, 255, 255, 0.18);
+  	@media @tablet-widths {
+  		box-shadow: 0 0 0 6px #ad292b,
+  		  			0 0 0 7px rgba(255, 255, 255, 0.18);
+  	}
 }
 
 .button:hover, .button:active, .button:focus {
@@ -45,6 +60,8 @@
 	text-align: left;
 	padding-left: 73px;
 	margin-top: 30px;
+
+	@media @tablet-widths {width: 250px;}
 }
 
 .button.search:before {
@@ -56,11 +73,13 @@
 	width: 26px;
 	height: 26px;
 	background: url(../img/ico-2.png) center no-repeat;
+	@media @tablet-widths {top: 10px;}
 }
 
 .button.arrow-right {
 	text-align: left;
 	padding-left: 57px;
+	@media @tablet-widths {padding-left: 25px;}
 }
 
 .button.arrow-right:before {
@@ -72,11 +91,16 @@
 	width: 57px;
 	height: 59px;
 	background: url(../img/arr-white.png) center no-repeat;
+	@media @tablet-widths {height: 42px; right: -10px;}
 }
 
 .button.arrow-red-right {
 	text-align: left;
 	padding-left: 45px;
+	@media @tablet-widths {
+		width: 200px;
+		padding-left: 25px;
+	}
 }
 
 .button.arrow-red-right:before {
@@ -90,5 +114,6 @@
 	background: url(../img/arr-red.png) center no-repeat;
 	background-size: contain;
 	transform: rotate(180deg);
+	@media @tablet-widths {height: 42px; right: 20px;}
 }
 

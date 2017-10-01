@@ -26,6 +26,10 @@
 		font-weight: bold;
 		color: @color-text-b;
 		span {color: @color-text-red;}
+
+		@media @tablet-widths {
+			width: 60%;
+		}
 	}
 
 	&__text {
@@ -36,6 +40,16 @@
 		float: left;
 		color:  @color-text-b;
 		.text-audi(12px);
+
+		@media @tablet-widths {
+			width: 50%;
+			padding-left: 0;
+			padding-top: 10px;
+		}
+
+		@media @mobil-widths {
+			display: none;
+		}
 	}
 
 	.link {		
@@ -65,6 +79,18 @@
 		float: right;		
 		text-align: left;
 		.text-audi(14px);
+		@media @tablet-widths {
+			width: 60%;
+			text-align: right;
+			margin-top: -30px;
+		}
+
+		@media @mobil-widths {
+			font-size: 12px;
+			width: 100%;
+			margin-top: 10px;
+			text-align: center;
+		}
 	}
 
 	&__audi {
@@ -75,6 +101,11 @@
 		padding-left: 45px;
 		text-align: right;
 		img {vertical-align: middle; height: 100%; width: auto;}
+		@media @tablet-widths {
+			width: 50%;
+			text-align: right;
+			margin-top: -40px;
+		}
 	}
 
 	&__hr {
@@ -98,4 +129,9 @@
 	font-weight: bold;
 	color: @color-text-b;
 	text-align: left;
+}
+
+.main-footer {
+	@media @tablet-widths {	padding-top: 10px;}
+
 }

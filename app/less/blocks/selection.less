@@ -2,11 +2,16 @@
 	background: url(../img/bg-select.jpg) center no-repeat;
   background-size: auto;
 	height: 800px;
+  @media @tablet-widths {height: auto;}
+  @media @mobil-widths { background-image: none;} 
 }
 
 .selection {
 	h2 {
 		padding-top: 40px;
+
+    @media @tablet-widths {padding-top: 20px; } 
+    @media @mobil-widths {} 
 	}
 
 	&__form {
@@ -18,39 +23,69 @@
 		margin-left: 70px;
 		padding: 0 95px;
 		border-radius: 5px;
-  		background-color: #fff;
-  		box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);
+  	background-color: #fff;
+  	box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);
 
-  		.title {
-  			.text-norm(24px);
-  		}
+    @media @tablet-widths {
+      width: 80%; 
+      margin: 30px auto 0;
+      text-align: center;
+      padding-bottom: 30px;
+    } 
+    @media @mobil-widths {
+      width: 100%;
+      max-width: 380px;
+      padding: 0 20px;
+    }
 
-  		.subtitle {
-  			.text-norm(16px);
-  			padding-left: 45px;
-  			line-height: 18px;
-  			background: url(../img/ico-3.png) left center no-repeat;
-  		}
+  	.title {
+  		.text-norm(24px);
+      @media @tablet-widths {font-size: 20px; } 
+      @media @mobil-widths {font-size: 16px;} 
+  	}
 
-  		.comment {
-  			.text-norm(16px);
-  			font-weight: bold;
-  			color: @color-text-gray;
-  			padding-top: 20px;
+  	.subtitle {
+  		.text-norm(16px);
+  		padding-left: 45px;
+  		line-height: 18px;
+  		background: url(../img/ico-3.png) left center no-repeat;     
+      @media @mobil-widths {font-size: 14px;} 
+  	}
 
-  			span {color: @color-text-b;}
-  		}
+  	.comment {
+  		.text-norm(16px);
+  		font-weight: bold;
+  		color: @color-text-gray;
+  		padding-top: 20px;
 
-  		.link {
-  			font-size: 16px;
-  			padding-top: 77px;
-  		}
+  		span {color: @color-text-b;}
+
+       @media @mobil-widths {font-size: 14px;} 
+  	}
+
+  	.link {
+  		font-size: 16px;
+  		padding-top: 77px;
+      @media @tablet-widths {
+        display: block; 
+        width: 100%;
+        padding-top: 30px;        
+      } 
+      @media @mobil-widths {font-size: 18px;} 
+  	}
 	}
 
 	&__step {
 		display: inline-block;
 		vertical-align: top;
 		padding-top: 30px;
+    @media @mobil-widths {display: block;}
 	}
+
+  &__step:nth-child(2),
+  &__step:nth-child(4) {
+    width: 400px;
+     @media @mobil-widths {width: 100%; max-width: 350px;}
+  }
 
 }

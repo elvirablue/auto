@@ -101,6 +101,7 @@ $(document).on('ready', function(){
             close = popup.querySelector('.modal_close');
             popup.querySelector('.modal__title').innerText = text;
             popup.style.top = '50%'; 
+             popup.style.bottom = 'auto';
             popup.style.marginTop = '-150px';  
                
           PopupShow(event);
@@ -116,7 +117,7 @@ $(document).on('ready', function(){
           popup.style.height = 'auto';
           popup.style.top = '50%'; 
           popup.style.marginTop = '-150px'; 
-             
+           popup.style.bottom = 'auto';   
           popup.querySelector('.modal__title').innerText = this.innerText;    
           PopupShow(event);
          

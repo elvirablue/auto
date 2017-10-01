@@ -9,6 +9,10 @@
 	padding: 0;
 	margin-top: 15px;
 	outline: none;
+
+	@media @tablet-widths {margin-top: 8px;}
+
+	@media @mobil-widths {max-width: 350px; width: 100%;}
 }
 
 .user-input.in-shadow {
@@ -19,11 +23,22 @@
 	width: 270px;
 	color: #000;
 	padding: 0 15px;
+
+	@media @mobil-widths {
+		width: 290px;
+	}
 }
 
 .user-input.mark{
     width: 372px;    
     margin-right: 30px;
+    @media @tablet-widths {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+    @media @mobil-widths {max-width:  350px; width: 100%;}
 }
 
 
@@ -33,7 +48,14 @@
 }
 
 .user-input.model {
-    width: 270px;    
+    width: 270px;
+     @media @tablet-widths {
+     	width: 372px;
+     	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    @media @mobil-widths {max-width:  350px; width: 100%;}    
 }
 
 .user-input.area {
@@ -42,4 +64,5 @@
 	resize: none;
 	outline: none;
 	padding: 15px;
+	@media @mobil-widths {max-width:  350px; width: 100%;}
 }

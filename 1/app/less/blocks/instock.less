@@ -1,0 +1,67 @@
+.instock {
+	display: block;
+	width: 100%;
+	h2 {padding-bottom: 30px;}
+	
+	&__block {
+		width: 100%;
+	  	min-height: 220px;
+	  	padding: 40px 40px;
+	  	margin-top: 10px;
+	  	background-color: #fff;
+		box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);
+		text-align: center;
+	}
+
+	&__img {
+		display: inline-block;
+		vertical-align: middle;
+		width: 296px;
+		height: auto;
+		text-align: left;
+
+		img {
+			width: auto;
+			max-width: 275px;
+			height: auto;
+		}
+	}
+
+	&__info {
+		display: inline-block;
+		vertical-align: middle;
+		width: 425px;
+		height: auto;
+		padding-left: 50px;
+		border-left: 1px solid #e2e1e1;
+
+
+	}
+
+	&__price {
+		display: inline-block;
+		vertical-align: middle;
+		width: 330px;
+		height: auto;
+		text-align: right;
+		padding-left: 70px;
+
+		.price {
+			padding: 10px 0 30px;
+		}
+
+
+	}
+}
+
+.price {
+	display: block;
+	width: 100%;
+	.text-norm(18px);
+	color: @color-text-gray;
+	text-align: left;
+	b {
+		color: #000;
+	}
+}
+
