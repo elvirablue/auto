@@ -9,8 +9,12 @@
 .main-footer-bg {
 	padding-top: 10px;
 	background-color: rgb(243, 243, 243);
-	height: 110px;
-	margin-top: -@nav-min-height-mobil;
+	height: @nav-min-height;
+	margin-top: -@nav-min-height;
+	@media @tablet-widths {
+		height: @nav-min-height-mobil;
+		margin-top: -@nav-min-height-mobil;
+	}		
 }
 
 .main-header, .main-footer {

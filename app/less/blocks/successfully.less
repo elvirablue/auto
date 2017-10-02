@@ -4,13 +4,26 @@
 	text-align: center;
 	padding-top: 150px;
 
+	@media @tablet-widths {padding-top: 80px;}	
+	@media @mobil-widths {padding-top: 40px;}	
+
 	.gray {
 		.text-light(24px);
 		color: #b6b6b6;
-		padding-top: 100px;		
+		padding-top: 100px;	
+		@media @tablet-widths {font-size: 20px; padding-top: 70px;	}	
+		@media @mobil-widths {font-size: 16px; padding-top: 40px;}		
 	}
 
-	h2 {padding: 15px;}
+	p {
+		font-size: 16px;		
+		@media @mobil-widths {font-size: 14px;}
+	}
+
+	h2 {
+		padding: 15px;
+		@media @mobil-widths { padding: 8px;}
+	}
 
 	.link {
 		padding-top: 90px;
@@ -32,6 +45,9 @@
   		    background-repeat: no-repeat;
   		    box-shadow: 0px 3px 7px 0px rgba(234, 28, 28, 0.35),
 		}
+
+		@media @tablet-widths {font-size: 16px; padding-top: 50px;	}	
+		@media @mobil-widths {font-size: 14px; padding-top: 20px; padding-bottom: 20px;}	
 	}
 }
 
@@ -49,6 +65,22 @@
   		box-shadow: 0px 3px 7px 0px rgba(234, 28, 28, 0.35),
   					0 0 0 50px #f8f6f6,
   					0 0 0 52px #e9e9e9;
+
+  		@media @tablet-widths {
+  			width: 70px;
+  			height: 70px;
+  			box-shadow: 0px 3px 7px 0px rgba(234, 28, 28, 0.35),
+  					0 0 0 30px #f8f6f6,
+  					0 0 0 32px #e9e9e9;
+  		}	
+		@media @mobil-widths {
+			width: 60px;
+  			height: 60px;
+  			background-size: auto;
+  			box-shadow: 0px 3px 7px 0px rgba(234, 28, 28, 0.35),
+  					0 0 0 20px #f8f6f6,
+  					0 0 0 22px #e9e9e9;
+		}	
 	}
 }
 
