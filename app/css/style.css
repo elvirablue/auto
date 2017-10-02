@@ -33,6 +33,11 @@ body {
   font-weight: normal;
   /*background: url(../img/final.jpg) top center no-repeat;*/
 }
+.mobil-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1,
 h2,
 h3,
@@ -1620,7 +1625,6 @@ span.multiselect-selected-text {
 }
 .instock {
   display: block;
-  width: 100%;
 }
 .instock h2 {
   padding-bottom: 30px;
@@ -1853,6 +1857,13 @@ table.table--modal2 tr td {
   }
   .form .input-wrapper button {
     margin-top: 10px;
+  }
+}
+@media (max-width: 1230px) {
+  .form .input-wrapper.mobil-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .disclaimer-bg {
@@ -2089,7 +2100,6 @@ table.table--modal2 tr td {
   }
 }
 .special {
-  width: 100%;
   padding: 0 100px 90px;
 }
 @media (max-width: 1230px) {
